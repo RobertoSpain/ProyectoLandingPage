@@ -1,0 +1,228 @@
+/* Variables de colores personalizados */
+:root {
+    --primary-color: #0077b6; 
+    --secondary-color: #ff7f50; 
+    --light-color: #caf0f8; 
+    --dark-color: #023e8a; 
+    --background-color: #f8f9fa; 
+    --text-color: #333; 
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding: 2rem 1rem;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Foco visible para usabilidad */
+button:focus, a:focus {
+    outline: 2px dashed var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Logo en la Hero Section */
+.hero img {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Características */
+.feature-icon {
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.2);
+}
+
+.features h3 {
+    color: var(--primary-color);
+    font-family: 'Pacifico', cursive;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonios */
+.card {
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.weather-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h3 {
+    margin-bottom: 15px;
+    color: #0077b6;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+
+
+/* Ajustes para tarjetas de eventos */
+.card {
+    max-width: 350px; /* Ajusta el ancho máximo */
+    margin: auto; /* Centra las tarjetas */
+}
+
+.card img {
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+}
+
+.card .card-body {
+    text-align: center; /* Centra el contenido */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, var(--primary-color), var(--dark-color));
+    color: var(--light-color);
+    text-align: center;
+}
+
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad para móviles y tablets */
+@media (max-width: 768px) {
+    .hero {
+        height: 75vh;
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .features h3 {
+        font-size: 1.5rem;
+    }
+
+    .features p {
+        font-size: 0.9rem;
+    }
+
+    .card img {
+        height: 150px; /* Reduce la altura de la imagen */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 65vh;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .carousel-inner img {
+        height: 200px;
+    }
+
+    .card {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Accesibilidad adicional */
+.navbar-nav a {
+    color: var(--light-color);
+}
+
+.navbar-nav a:focus {
+    outline: 2px solid var(--secondary-color);
+}

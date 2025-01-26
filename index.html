@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf the Waves</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Surf the Waves</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features" aria-label="Ir a características">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery" aria-label="Ir a la galería">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wave-levels" aria-label="Ir a niveles de olas">Niveles de Olas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events" aria-label="Ir a eventos">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#surf-spots" aria-label="Ir a lugares famosos">Lugares Famosos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#weather" aria-label="Ir a condiciones de clima">Clima</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta" aria-label="Ir a contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-dark text-white text-center py-5" style="background: url('https://source.unsplash.com/1600x900/?surf') no-repeat center center/cover; height: 100vh;">
+        <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+            <img src="img/logo.png" alt="Logo de Surf the Waves" class="mb-4" style="width: 150px;">
+            <h1 class="display-3 fw-bold" style="font-family: 'Pacifico', cursive;">Surf the Waves</h1>
+            <p class="lead mt-3">"Únete a nuestra comunidad y vive la emoción del surf."</p>
+            <a href="#features" class="btn btn-primary btn-lg mt-4" aria-label="Conoce nuestras características">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">¿Por qué elegirnos?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="bi bi-person-badge-fill feature-icon mb-3" style="font-size: 3rem; color: #ff7f50;"></i>
+                    <h3>Entrenadores Expertos</h3>
+                    <p>Aprende con profesionales de clase mundial en lecciones personalizadas.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-basket2-fill feature-icon mb-3" style="font-size: 3rem; color: #ff7f50;"></i>
+                    <h3>Equipo de Alta Calidad</h3>
+                    <p>Accede a tablas de alta calidad, trajes de neopreno y otros equipos de surf.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-calendar2-event-fill feature-icon mb-3" style="font-size: 3rem; color: #ff7f50;"></i>
+                    <h3>Eventos Emocionantes</h3>
+                    <p>Participa en competencias exclusivas de surf y fiestas en la playa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Momentos del Surf</h2>
+            <div id="surfCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/surf.jpg" class="d-block w-100 img-fluid rounded" alt="Surfistas en acción">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/playa.jpg" class="d-block w-100 img-fluid rounded" alt="Vista de una playa tropical">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/olas.jpg" class="d-block w-100 img-fluid rounded" alt="Grandes olas ideales para surfear">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#surfCarousel" data-bs-slide="prev" aria-label="Anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#surfCarousel" data-bs-slide="next" aria-label="Siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Levels Section -->
+    <section id="wave-levels" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Niveles de Olas</h2>
+            <table class="table table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nivel</th>
+                        <th>Altura de la Ola</th>
+                        <th>Recomendado Para</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Principiante</td>
+                        <td>0.5 - 1 metro</td>
+                        <td>Lecciones iniciales y práctica básica.</td>
+                    </tr>
+                    <tr>
+                        <td>Intermedio</td>
+                        <td>1 - 2 metros</td>
+                        <td>Surfistas con algo de experiencia.</td>
+                    </tr>
+                    <tr>
+                        <td>Avanzado</td>
+                        <td>2+ metros</td>
+                        <td>Surfistas expertos que buscan un desafío.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Próximos Eventos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light text-dark shadow">
+                        <img src="img/images.jpg" class="card-img-top" alt="Evento en la playa">
+                        <div class="card-body">
+                            <h5 class="card-title">Surf Camp 2025</h5>
+                            <p class="card-text">Un campamento de 3 días para principiantes y expertos.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Más información sobre Surf Camp 2025">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light text-dark shadow">
+                        <img src="img/cartel.jpg" class="card-img-top" alt="Evento de olas grandes">
+                        <div class="card-body">
+                            <h5 class="card-title">Competencia de Surf</h5>
+                            <p class="card-text">Compite con los mejores en olas de 2+ metros.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Regístrate en la competencia de surf">Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Famous Surf Spots with Weather Section -->
+<section id="surf-spots-weather" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Lugares Famosos para Surfear</h2>
+        <div class="row justify-content-center text-center" id="beaches-container">
+        </div>
+    </div>
+</section>
+
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-5 text-white text-center" style="background: linear-gradient(45deg, #0077b6, #023e8a);">
+        <div class="container">
+            <h2 class="mb-4">¿Listo para surfear?</h2>
+            <p class="lead">Reserva tu clase ahora y únete a nuestra comunidad de surfistas.</p>
+            <a href="#events" class="btn btn-light btn-lg" aria-label="Reserva tu clase ahora">Reserva Ahora</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Testimonio de nuestros Surfitas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p>"Surfear aquí ha sido un cambio de vida. ¡Los entrenadores son increíbles!"</p>
+                                <footer class="blockquote-footer">Daniel Guzman</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p>El mejor equipo de surf y un ambiente de playa inolvidable. ¡Totalmente recomendado!</p>
+                                <footer class="blockquote-footer">Leticia Atencia</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p>"Me encantaron los eventos y competencias. ¡Una experiencia increíble!"</p>
+                                <footer class="blockquote-footer">Alberto Pérez</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-2 mb-3">
+                <h3>Ayuda</h3>
+                <a href="#" class="text-white" aria-label="Preguntas frecuentes">Preguntas frecuentes</a><br>
+                <a href="#" class="text-white" aria-label="Política de envío">Política de envío</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <h3>Nosotros</h3>
+                <a href="#" class="text-white" aria-label="Quiénes somos">Quiénes somos</a><br>
+                <a href="#" class="text-white" aria-label="Blog">Blog</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <h3>Contacto</h3>
+                <a href="#" class="text-white" aria-label="Enviar un email">Email</a><br>
+                <a href="#" class="text-white" aria-label="Contactar por teléfono">Teléfono</a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-2" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white me-2" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Métodos de Pago</h3>
+                <div class="Pago">
+                    <a href="#" class="text-white me-2" aria-label="Visa"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="#" class="text-white me-2" aria-label="Mastercard"><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a href="#" class="text-white" aria-label="Paypal"><i class="fa-brands fa-cc-paypal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
